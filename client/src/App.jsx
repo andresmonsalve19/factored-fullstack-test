@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 import NotFoundPage from "./pages/NotFoundPage";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import NotFoundProfilePage from "./pages/NotFoundEmployee";
 
 function App() {
