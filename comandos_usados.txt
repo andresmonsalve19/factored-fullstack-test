@@ -12,3 +12,12 @@ Ejecutar contenedor en docker
 Para el cliente:
 
 npm create vite
+npm install
+npm install react-router-dom@6
+npm i axios
+npm i formik
+npm i cors
+npm install -D tailwindcss postcss autoprefixer
+npm install chart.js
+npm install react-chartjs-2
+

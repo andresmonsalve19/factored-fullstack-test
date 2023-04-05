@@ -1,12 +1,12 @@
 import {Router} from "express";
 import {
-    getEmployees,
     getEmployee,
+    validateForm
 } from "../controllers/employees.controller.js";
 
 const router = Router();
 
-router.get("/employees", getEmployees);
+router.post("/employees", validateForm);
 
 router.get("/employees/:id", getEmployee);
 
