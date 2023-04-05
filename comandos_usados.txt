@@ -1,0 +1,14 @@
+En el server:
+
+- npm init -y --> Inicia el package.json del server
+- npm i express mysql2 morgan --> Modulos usados en el server 
+- npm i nodemon -D
+
+Base de datos:
+
+Ejecutar contenedor en docker
+- docker run --name mysqldb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=employeesdb  -d mysql
+
+Para el cliente:
+
+npm create vite
