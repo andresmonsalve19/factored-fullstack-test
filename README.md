@@ -3,9 +3,9 @@
 ### Sigue las siguients instrucciones para correr el proyecto:
 
 1. Una vez clonado en el repositorio local debes abrir una terminal y ejecutar el archivo docker-compose.yml:
-`docker-compose up`
+`docker-compose up -d`
 
-2. y ejecutar los siguientes códigos para iniciar la base de datos:
+2. Luego en la misma consola ejecutar los siguientes códigos para iniciar la base de datos:
 
 `docker exec -it mysql-1 bash`
 
