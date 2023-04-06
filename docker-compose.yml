@@ -7,23 +7,30 @@ services:
     environment: 
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: employeesdb
+    container_name: mysqldb
     ports:
       - 3306:3306
+    volumes:
+      - data:/var/lib/mysql
 
   server:
+    restart: always
     build: 
-      dockerfile: ./server/Dockerfile
+      dockerfile: Dockerfile
       context: ./server
+    container_name: server
     ports:
       - 4000:4000
-    image: backend
     command: npm start
 
   client:
     build:
-      dockerfile: ./client/Dockerfile
+      dockerfile: Dockerfile
       context: ./client
+    container_name: client
     ports:
       - 5173:5173
-    image: frontend
     command: npm run dev
+
+volumes:
+  data:
