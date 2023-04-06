@@ -7,7 +7,7 @@
 
 2. Luego en la misma consola ejecutar los siguientes códigos para iniciar la base de datos:
 
-`docker exec -it factored-fullstack-test-mysql-1 bash`
+`docker exec -it mysqldb bash`
 
 Una vez dentro de la consola bash ejecutar:
 `mysql -u root -ppassword`
